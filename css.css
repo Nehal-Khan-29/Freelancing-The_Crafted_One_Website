@@ -115,13 +115,13 @@ body::before {
     padding: 10px;
 }
 
-.menubar li a:hover{
+.menubar li a:hover {
     background-color: white;
     color: black;
     transition:0.3s ease;
     border-radius: 15px;
     font-weight: bolder;
-    
+
 }
 
 #Srikanth_Name{
@@ -205,6 +205,16 @@ body::before {
 }
 
 /*===================================================== About ===========================================================================*/
+
+.abt_me{
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: left;
+    background-color: #a6d6fd;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 30px;
+}
 
 .problems{
     font-weight: bold;
@@ -400,12 +410,13 @@ body::before {
 }
 
 .rp_text{
-    background-color: white;
+    background-image: linear-gradient(135deg, rgb(206, 223, 248), rgb(179, 230, 247));
     opacity: 0.9;
     border-radius: 25px;
     padding: 20px;
     text-align: left;
     overflow-y: auto;
+    font-weight: bold;
 }
 
 .rp_text::-webkit-scrollbar {
@@ -423,6 +434,10 @@ body::before {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #5149f3; 
+}
+
+.rp_text:hover{
+    transform: translateY(-5px);
 }
 
 /*===================================================== contact ===========================================================================*/
