@@ -36,6 +36,19 @@ function togglecheck() {
       }
     }
   }
+  
+  function Menuoff() {
+    var menuList = document.getElementById("menulist");
+    var menuListItems = menuList.getElementsByTagName("li");
+    if (menuList.style.display === "block") {
+      menuList.style.display = "none";
+      for (var i = 0; i < menuListItems.length; i++) {
+        menuListItems[i].style.display = "none";
+      }
+    }
+  }
+
+  
 
 
 /*===================================================== Home ===========================================================================*/
