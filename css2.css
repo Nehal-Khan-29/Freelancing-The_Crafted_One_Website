@@ -36,11 +36,9 @@
     #menuToggle, #nklogo{
         display: inline;
     }
-
     .menubar li {
         display: none;
     }
-
 }
 
 @media only screen and (min-width: 1151px) {
@@ -51,20 +49,8 @@
 
 /*-----------------------------------------------------------------------body----------------------------------------------------------*/
 
-    @media only screen and (max-width: 1430px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
-            max-width: 80%;
-        }
-    }
-
-    @media only screen and (max-width: 1420px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
-            max-width: 90%;
-        }
-    }
-
     @media only screen and (max-width: 410px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+        .home_container, .about_container , .services_container, .reviews_container{
             max-width: 95%;
         }
     }
@@ -101,7 +87,7 @@
     .welcome_text{
         margin-top: 20px;
         max-width: 300px;
-        font-size: medium;
+        font-size: large;
     }
 
     .home_container{
