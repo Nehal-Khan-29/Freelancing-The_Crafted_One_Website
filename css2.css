@@ -104,6 +104,13 @@
         font-size: medium;
     }
 
+    .home_container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .profile_content {
         transform: scale(0.7);
     }
