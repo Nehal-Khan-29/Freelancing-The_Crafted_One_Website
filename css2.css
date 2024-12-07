@@ -1,0 +1,267 @@
+
+/*-----------------------------------------------------------------------Nav bar----------------------------------------------------------*/
+
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+#menulist{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 200px; 
+    height:fit-content;
+    text-align: center;
+    list-style-type: none;
+}
+
+#menulist li {
+    padding-bottom: 5px; 
+}
+
+@media only screen and (max-width: 1150px) {
+    #menuToggle, #nklogo{
+        display: inline;
+    }
+
+    .menubar li {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1151px) {
+    #menulist li , #menulist{
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------body----------------------------------------------------------*/
+
+    @media only screen and (max-width: 1430px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1420px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 410px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 95%;
+        }
+    }
+
+/*-----------------------------------------------------------------------home----------------------------------------------------------*/
+
+@media only screen and (max-width: 930px){
+    .text1 span{
+        font-size: 60px;
+    }
+    .text1{
+        margin-top: 20%;
+    }
+    .nkname{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+
+    .text1{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .text1 span{
+        font-size: 60px;
+    }
+
+    .text1{
+        margin-top: 30%;
+    }
+    .nkname{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+    .text1{
+        margin-top: 30%;
+    }
+
+    .upp{
+        bottom: 30px;
+        right: 30px;
+        height: 40px;
+        width: 40px;
+    }
+    .upp img{
+        height: 40px;
+        width: 40px;
+    }
+    .nkname{
+        width: 200px;
+    }
+}
+
+/*-----------------------------------------------------------------------about----------------------------------------------------------*/
+
+@media only screen and (max-width: 1420px){
+    .aboutcontainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .abtme{
+        margin-top: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+
+    .nkphoto{
+        height: 450px;
+        width: auto;
+    }
+
+    .abtme{
+        height: auto;
+        width: 307px;
+    }
+
+    .abouttext{
+        font-size: large;
+    }
+    
+}
+
+/*-----------------------------------------------------------------------Services----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 500px){
+
+    .wrapper{
+        margin-top: 150px;
+    }
+
+    .wrapper i:first-child{
+        left: -50px;
+    }
+    .wrapper i:last-child{
+        right: -50px;
+    }
+
+    .video-container iframe{
+        width:130;
+        height:80;
+    }
+
+    .about_the_work{
+        margin-top: 10px;
+        padding:0 30px 0 30px;
+        font-size: small;
+    }
+
+    .try_button{
+        margin-left: 30px;
+    }
+}
+
+/*-----------------------------------------------------------------------reviews----------------------------------------------------------*/
+
+@media only screen and (max-width: 1100px){
+    .reviews_container_2 {
+        display: grid;
+        grid-auto-rows: minmax(200px, 200px);
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+        padding: 10px;
+        margin-top: 100px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------contact----------------------------------------------------------*/
+
+@media only screen and (max-width: 1020px){
+    .form-group-title{
+        width: 100px;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 400px;
+    }
+    .contact-form {
+        border-spacing: 30px 20px; 
+      }
+}
+
+@media only screen and (max-width: 900px){
+
+    .contact-form input, .contact-form textarea{
+        width: 350px;
+    }
+    .contact-form {
+        border-spacing: 20px 20px; 
+      }
+}
+
+@media only screen and (max-width: 770px){
+
+    .contact-form input, .contact-form textarea{
+        width: 300px;
+    }
+    .contact-form {
+        border-spacing: 0px 20px; 
+      }
+}
+
+@media only screen and (max-width: 690px){
+    .contact-form-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        border-spacing: 0px 20px; 
+      }
+
+    .logos li a i{
+        font-size: large;
+    }
+
+    .logos li{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .Srikanth_Name_2{
+        font-size: medium;
+        animation: nametransition 3s ease-in-out infinite;
+    }
+
+}
+
+
