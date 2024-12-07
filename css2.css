@@ -71,91 +71,46 @@
 
 /*-----------------------------------------------------------------------home----------------------------------------------------------*/
 
-@media only screen and (max-width: 930px){
-    .text1 span{
-        font-size: 60px;
-    }
-    .text1{
-        margin-top: 20%;
-    }
-    .nkname{
-        width: 400px;
+@media only screen and (max-width: 1300px){
+    .welcome_text{
+        max-width: 300px;
+        font-size: medium;
     }
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 1000px){
+    .welcome_text{
+        margin-top: 20px;
+        max-width: 500px;
+        font-size: medium;
+    }
 
-    .text1{
-        margin-top: 20%;
+    .home_container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .profile_content {
+        transform: scale(0.8);
     }
 }
 
-@media only screen and (max-width: 600px){
-    .text1 span{
-        font-size: 60px;
+@media only screen and (max-width: 580px){
+    .welcome_text{
+        margin-top: 20px;
+        max-width: 300px;
+        font-size: medium;
     }
 
-    .text1{
-        margin-top: 30%;
-    }
-    .nkname{
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    
-    .text1{
-        margin-top: 30%;
-    }
-
-    .upp{
-        bottom: 30px;
-        right: 30px;
-        height: 40px;
-        width: 40px;
-    }
-    .upp img{
-        height: 40px;
-        width: 40px;
-    }
-    .nkname{
-        width: 200px;
+    .profile_content {
+        transform: scale(0.7);
     }
 }
 
 /*-----------------------------------------------------------------------about----------------------------------------------------------*/
 
-@media only screen and (max-width: 1420px){
-    .aboutcontainer2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .abtme{
-        margin-top: 50px;
-    }
-    
-}
-
-@media only screen and (max-width: 500px){
-
-    .nkphoto{
-        height: 450px;
-        width: auto;
-    }
-
-    .abtme{
-        height: auto;
-        width: 307px;
-    }
-
-    .abouttext{
-        font-size: large;
-    }
-    
-}
 
 /*-----------------------------------------------------------------------Services----------------------------------------------------------*/
 

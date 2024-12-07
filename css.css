@@ -133,16 +133,15 @@ body::before {
 
 /*===================================================== Home ===========================================================================*/
 
-.home_container_2{
+.home_container{
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .welcome_text{
-    transform: translateY(50%);
     text-align: justify;
-    max-width: 650px;
+    width: 650px;
     color: rgb(55, 56, 57);
     font-weight: bold;
     font-size: large;
@@ -150,7 +149,6 @@ body::before {
 
 .profile_content{
     rotate: 10deg;
-    transform: translateY(25%);
 }
 
 .paper_clip_1{
