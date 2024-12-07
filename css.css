@@ -275,7 +275,7 @@ body::before {
   .carousel :where(.card, .img) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
   }
   .carousel .card {
     scroll-snap-align: start;
@@ -342,24 +342,13 @@ body::before {
       transform: translateY(0);
     }
   }
-    @keyframes slideInFromBottom {
-      from {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(0);
-      }
-      to {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(-20px);
-      }
-  
-  }
+
   .card:hover .img, .card:hover h2, .card:hover span {
     display: none;
   }
   .card .video-container .about_the_work{
     text-align: justify;
+    transform: translateY(-25%);
     max-height: 150px;
     font-weight: bold;
     max-width: 300px;
