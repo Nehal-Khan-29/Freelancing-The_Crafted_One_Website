@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'sw-icon-font';
     text-decoration: none;
     outline: none;
 }
@@ -20,16 +20,16 @@ html{
   }
 
 ::-webkit-scrollbar-track {
-    background-color: #a6d6fd;
+    background-color: #E0D2BB;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #836df4; /* Thumb color */
+    background: #B49E81; /* Thumb color */
     border-radius: 6px; /* Rounded edges */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #5149f3; /* Thumb color on hover */
+    background: #ffffff; /* Thumb color on hover */
 }
 
 /*========================================================= Body =========================================================*/
@@ -37,7 +37,7 @@ html{
 body{
     height: auto;
     overflow-x: hidden;
-    background-color: rgb(225, 244, 250);
+    background-color: #F2E3CA;
 }
 
 body::before {
@@ -47,7 +47,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("assets\\img\\body_design.png");
+    /*background-image: url("assets\\img\\body_design.png");*/
     background-size: cover;
     opacity: 0.7;
     z-index: -1;
@@ -64,7 +64,6 @@ body::before {
     z-index: 10;
     max-width: 90%;
     margin:  0 auto;
-    font-style: italic;
 }
 
 .contact_container{
@@ -85,11 +84,14 @@ body::before {
     margin-top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(0, 66, 135);
+    color: #B49E81;
     font-size: x-large;
-    font-style: italic;
     font-weight: bold;
     text-align: center;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px;
+    border: 10px double #B49E81;
 }
 
 /*===================================================== Navigation Bar =====================================================*/
@@ -105,7 +107,7 @@ body::before {
     text-align: right;
     transition: top 0.3s;
     display: block;
-    background-color: rgb(0, 123, 255);
+    background-color: #D1AC7D;
     z-index: 999;
 }
 
@@ -201,7 +203,6 @@ body::before {
     font-weight: bold;
     font-size: 30px;
     margin-top: 30px;
-    font-style: italic;
 }
 
 /*===================================================== About ===========================================================================*/
@@ -289,7 +290,7 @@ body::before {
   }
   .carousel .card {
     scroll-snap-align: start;
-    height: 342px;
+    height: 340px;
     list-style: none;
     cursor: pointer;
     padding-bottom: 15px;
@@ -297,7 +298,7 @@ body::before {
     border-radius: 8px;
   }
   .card{
-    background:linear-gradient(135deg, rgb(87, 128, 251),rgb(103, 174, 249));
+    background:linear-gradient(135deg, #F7CCA7,rgb(187, 219, 252));
   }
   .card .img img {
     width: 200px;
@@ -308,7 +309,7 @@ body::before {
   }
   .carousel .card h2 {
     font-weight: 900;
-    color: #ffffff;
+    color: rgb(0, 66, 135);
     font-size: 1.56rem;
     margin: 30px 0 5px;
   }
@@ -332,6 +333,7 @@ body::before {
   
   .card .video-container {
     display: none;
+    padding: 20px;
   }
   .card .img,.card h2,.card span{
     animation: slideInFromTop 1s ease;
@@ -353,16 +355,36 @@ body::before {
     }
   }
 
-  .card:hover .img, .card:hover h2, .card:hover span {
+  .card:hover .img, .card:hover h2 {
     display: none;
   }
+
   .card .video-container .about_the_work{
     text-align: justify;
-    transform: translateY(-25%);
-    max-height: 150px;
+    overflow-y: auto;
     font-weight: bold;
+    font-size: large;
+    max-height: 300px;
     max-width: 300px;
   }
+
+    .about_the_work::-webkit-scrollbar {
+    width: 6px;
+   }
+
+    .about_the_work::-webkit-scrollbar-track {
+        background-color: #E0D2BB;
+    }
+
+    .about_the_work::-webkit-scrollbar-thumb {
+        background: #B49E81; 
+        border-radius: 6px; 
+    }
+
+    .about_the_work::-webkit-scrollbar-thumb:hover {
+        background: #ffffff; 
+    }
+
   .card .video-container .try_button{
     color:black;
     font-weight: bold;
@@ -384,6 +406,22 @@ body::before {
 
 /*===================================================== reviews ===========================================================================*/
 
+.headers_rev{
+    position: absolute;
+    padding: 10px;
+    height: fit-content;
+    border: 10px double #F2E3CA;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 30px;
+    background-color: #B49E81;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
 .reviews_container_2 {
     display: grid;
     grid-auto-rows: minmax(200px, 200px);
@@ -395,12 +433,13 @@ body::before {
 
 .review_person{
     height: 200px;
-    background-color: rgb(25, 135, 253, 0.4);
+    background-color: #B49E81;
     border-radius: 30px;
     padding: 15px;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-size: large;
 }
 
 .rp_circle{
@@ -410,17 +449,15 @@ body::before {
 }
 
 .rp_text{
-    background-image: linear-gradient(135deg, rgb(206, 223, 248), rgb(179, 230, 247));
+    background-image: linear-gradient(360deg,white, #F2E3CA);
     opacity: 0.9;
     border-radius: 25px;
     width: 100%;
     height: 100%;
+    font-size: large;
 }
 
 .rp_text p{
-    background-image: linear-gradient(135deg, rgb(206, 223, 248), rgb(179, 230, 247));
-    opacity: 0.9;
-    border-radius: 25px;
     padding: 20px;
     text-align: left;
     overflow-y: auto;
@@ -431,16 +468,16 @@ body::before {
     width: 5px;
   }
 
-::-webkit-scrollbar-track {
+.rp_text::-webkit-scrollbar-track {
     visibility: hidden;
 }
 
-::-webkit-scrollbar-thumb {
+.rp_text::-webkit-scrollbar-thumb {
     background: #836df4; 
     border-radius: 6px; 
 }
 
-::-webkit-scrollbar-thumb:hover {
+.rp_text::-webkit-scrollbar-thumb:hover {
     background: #5149f3; 
 }
 
@@ -451,7 +488,7 @@ body::before {
 /*===================================================== contact ===========================================================================*/
 
 .letsconnect{
-    color: rgb(0, 66, 135);
+    color: #B49E81;
     font-size: x-large;
     font-style: italic;
 }
@@ -481,20 +518,20 @@ input,textarea{
     font-size: larger;
     font-weight: 900;
     width: 400px;
-    background-color: rgb(25, 135, 253, 0.2);
-    color: rgb(0, 66, 135);
+    background-color: rgb(255, 255, 255, 0.4);
+    color: black;
 }
 
 #name{
-    background-color: rgb(25, 135, 253, 0.8);
+    background-color: rgb(255, 255, 255, 1);
 }
 
 #email{
-    background-color: rgb(25, 135, 253, 0.6);
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 #subject{
-    background-color: rgb(25, 135, 253, 0.4);
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 textarea{
@@ -515,7 +552,7 @@ input::placeholder, textarea::placeholder {
     font-weight: 900;
     border: none;
     color: white;
-    background-color:rgb(76, 159, 247);
+    background-color: #B49E81;
 }
 
 .btn-md:hover{
@@ -530,7 +567,7 @@ input::placeholder, textarea::placeholder {
     justify-content: left;
     list-style: none;
     padding: 30px;
-    background-color: rgb(0, 123, 255);
+    background-color: #D1AC7D;
     margin-bottom: 0;
     width: 100%;
 }
@@ -550,7 +587,7 @@ input::placeholder, textarea::placeholder {
 .logos .lin i:hover,.logos .ins i:hover{
     width:30px;
     transition: ease;
-    color: rgb(81, 177, 246);
+    color: black;
   }
 
 .Srikanth_Name_2{
