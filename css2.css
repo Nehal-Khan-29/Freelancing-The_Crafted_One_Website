@@ -115,6 +115,7 @@
 
     .photos_chunk {
         transform: scale(0.7);
+        width: 0px;
     }
 }
 
