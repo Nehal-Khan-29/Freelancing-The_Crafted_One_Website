@@ -147,7 +147,7 @@ function isInViewport(element) {
   }
   
   function handleScroll() {
-    const elements = document.querySelectorAll('');
+    const elements = document.querySelectorAll('.home_container, .abt_me_1, .abt_me_2, .problems, .card, .review_person, .contact-form input, .contact-form textarea, .contact-form button');
   
     elements.forEach(element => {
       if (isInViewport(element)) {
