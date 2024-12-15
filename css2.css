@@ -58,14 +58,14 @@
 /*-----------------------------------------------------------------------home----------------------------------------------------------*/
 
 @media only screen and (max-width: 1300px){
-    .welcome_text{
+    .welcome_text2{
         max-width: 300px;
         font-size: medium;
     }
 }
 
 @media only screen and (max-width: 1000px){
-    .welcome_text{
+    .welcome_text2{
         margin-top: 20px;
         max-width: 500px;
         font-size: medium;
@@ -84,7 +84,7 @@
 }
 
 @media only screen and (max-width: 580px){
-    .welcome_text{
+    .welcome_text2{
         margin-top: 20px;
         max-width: 300px;
         font-size: large;
