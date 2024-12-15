@@ -165,4 +165,13 @@ function isInViewport(element) {
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('load', handleScroll);
 
-/*=====================================================   ===========================================================================*/
+/*===================================================== image open  ===========================================================================*/
+
+const gallery = document.querySelectorAll('img');
+
+  // Add click event to each image
+  gallery.forEach(img => {
+    img.addEventListener('click', () => {
+      window.open(img.src, '_blank');
+    });
+  });
