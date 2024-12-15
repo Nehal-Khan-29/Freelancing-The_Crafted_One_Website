@@ -435,7 +435,6 @@ body::before {
   .card .video-container .about_the_work{
     text-align: justify;
     overflow-y: auto;
-    font-weight: bold;
     font-size: large;
     max-height: 300px;
     max-width: 300px;
@@ -508,11 +507,15 @@ body::before {
     height: 200px;
     background-color: #B49E81;
     border-radius: 30px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     font-size: large;
+}
+
+.review_person_name b, .review_person_name p{
+    font-size: medium;
 }
 
 .rp_circle{
@@ -534,7 +537,6 @@ body::before {
     padding: 20px;
     text-align: left;
     overflow-y: auto;
-    font-weight: bold;
 }
 
 .rp_text::-webkit-scrollbar {
