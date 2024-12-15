@@ -115,7 +115,6 @@
 
     .photos_chunk {
         transform: scale(0.7);
-        flex-direction: column;
     }
 }
 
@@ -137,7 +136,7 @@
     .photos_chunk {
         transform: scale(1);
         visibility: hidden;
-        width: 0px;
+        flex-direction: column;
     }
     .profile_content1 {
         transform: scale(0.7);
@@ -145,6 +144,30 @@
     }
     .profile_photo1{
         box-shadow: 5px 5px 5px gray;
+    }
+    .profile_content2{
+        transform: translateX(0px) translateY(0px) scale(0.6);
+        rotate: 0deg;
+    }
+    .profile_content3{
+        transform: translateX(0px) translateY(0px) scale(0.65);
+        rotate: 0deg;
+    }
+    .profile_content4{
+        transform: translateX(0px) translateY(0px) scale(0.6);
+        rotate: 0deg;
+    }
+    .profile_content5{
+        transform: translateX(0px) translateY(0px) scale(0.7);
+        rotate: 0deg;
+    }
+    .profile_content6{
+        transform: translateX(0px) translateY(0px) scale(0.7);
+        rotate: 0deg;
+    }
+    .profile_content7{
+        transform: translateX(0px) translateY(0px) scale(0.7);
+        rotate: 0deg;
     }
 }
 
