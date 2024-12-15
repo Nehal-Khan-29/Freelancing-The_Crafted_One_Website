@@ -115,6 +115,7 @@
 
     .photos_chunk {
         transform: scale(0.7);
+        flex-direction: column;
     }
 }
 
@@ -240,9 +241,6 @@
     .review_person{
         flex-direction: column;
         height: 350px;
-    }
-    .headers_rev{
-        font-size: large;
     }
     
 }
