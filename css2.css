@@ -136,14 +136,14 @@
     .photos_chunk {
         transform: scale(1);
         visibility: hidden;
-        flex-direction: column;
+        flex-direction: row;
     }
     .profile_content1 {
         transform: scale(0.7);
         visibility: visible;
     }
     .profile_photo1{
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px rgb(255, 0, 0);
     }
     .profile_content2{
         transform: translateX(0px) translateY(0px) scale(0.6);
