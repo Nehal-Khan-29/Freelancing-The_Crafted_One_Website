@@ -249,13 +249,37 @@ body::before {
 /*===================================================== About ===========================================================================*/
 
 .abt_me{
-    font-weight: bold;
-    margin-top: 100px;
-    text-align: left;
-    background-color: #a6d6fd;
-    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.abt_me_1{
+    align-content: center;
+    height: 500px;
+    width: 500px;
     border-radius: 30px;
-    padding: 30px;
+    font-size: 20px;
+    background-color: #B49E81;
+    border: 10px double #F2E3CA;
+    padding: 20px;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+.abt_me_2{
+    align-content: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-image: linear-gradient(-135deg,white, #F2E3CA);
+    border: 10px double #B49E81;
+    padding: 20px;
+    text-align: justify;
+    overflow-y: auto;
+
 }
 
 .problems{

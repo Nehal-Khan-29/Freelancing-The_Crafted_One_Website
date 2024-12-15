@@ -122,6 +122,27 @@
 
 /*-----------------------------------------------------------------------about----------------------------------------------------------*/
 
+@media only screen and (max-width: 1350px){
+
+    .abt_me{
+        flex-direction: column;
+    }
+    .abt_me_2{
+        margin-top: 50px;
+    }
+    .problems{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .abt_me_1, .abt_me_2{
+        font-size: medium;
+        height: fit-content;
+        width: 300px;
+    }
+}
 
 /*-----------------------------------------------------------------------Services----------------------------------------------------------*/
 
