@@ -143,7 +143,7 @@
         visibility: visible;
     }
     .profile_photo1{
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px rgb(255, 0, 0);
     }
 }
 
