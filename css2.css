@@ -55,9 +55,20 @@
         }
     }
 
+    @media only screen and (max-width: 700px){
+        .swan3 img{
+            height: 200px;
+        }
+    }
+
 /*-----------------------------------------------------------------------home----------------------------------------------------------*/
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1400px){
+    .welcome_text1{
+        max-width: 600px;
+        font-size: x-large;
+    }
+
     .welcome_text2{
         max-width: 300px;
         font-size: medium;

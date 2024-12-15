@@ -94,6 +94,38 @@ body::before {
     border: 10px double #B49E81;
 }
 
+.swan1{
+    top: 50px;
+    left: 10px;
+    position: fixed;
+    z-index: -1; 
+}
+.swan2{
+    top: 30px;
+    left: 30px;
+    position: fixed;
+    z-index: -1; 
+}
+.swan3{
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: -1; 
+}
+.swan1 img{
+    opacity: 0.3;
+    height: 70px;
+}
+.swan2 img{
+    opacity: 0.3;
+    height: 100px;
+    rotate: 20deg;
+}
+.swan3 img{
+    opacity: 0.3;
+    height: 400px;
+}
+
 /*===================================================== Navigation Bar =====================================================*/
 
 .menubar{
@@ -143,7 +175,7 @@ body::before {
 .welcome_text1{
     margin-top: 50px;
     text-align: justify;
-    width: 850px;
+    max-width: 850px;
     color: rgb(55, 56, 57);
     font-weight: bold;
     font-size: xx-large;
