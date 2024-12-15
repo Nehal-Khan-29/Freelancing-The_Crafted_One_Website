@@ -135,7 +135,6 @@
 
     .photos_chunk {
         transform: scale(1);
-        visibility: hidden;
         flex-direction: row;
     }
     .profile_content1 {
@@ -148,26 +147,32 @@
     .profile_content2{
         transform: translateX(0px) translateY(0px) scale(0.6);
         rotate: 0deg;
+        visibility: hidden;
     }
     .profile_content3{
         transform: translateX(0px) translateY(0px) scale(0.65);
         rotate: 0deg;
+        visibility: hidden;
     }
     .profile_content4{
         transform: translateX(0px) translateY(0px) scale(0.6);
         rotate: 0deg;
+        visibility: hidden;
     }
     .profile_content5{
         transform: translateX(0px) translateY(0px) scale(0.7);
         rotate: 0deg;
+        visibility: hidden;
     }
     .profile_content6{
         transform: translateX(0px) translateY(0px) scale(0.7);
         rotate: 0deg;
+        visibility: hidden;
     }
     .profile_content7{
         transform: translateX(0px) translateY(0px) scale(0.7);
         rotate: 0deg;
+        visibility: hidden;
     }
 }
 
