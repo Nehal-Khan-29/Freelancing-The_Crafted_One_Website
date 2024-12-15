@@ -144,9 +144,7 @@
         height:80;
     }
 
-    .about_the_work{
-        margin-top: 10px;
-        padding:0 30px 0 30px;
+    .card .video-container .about_the_work{
         font-size: small;
     }
 
