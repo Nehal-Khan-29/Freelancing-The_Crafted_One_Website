@@ -135,18 +135,20 @@
 
     .photos_chunk {
         transform: scale(1);
+        width: 1000px;
         flex-direction: row;
+    }
+    .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
+        visibility: hidden;
     }
     .profile_content1 {
         transform: scale(0.7);
         visibility: visible;
     }
     .profile_photo1{
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px red;
     }
-    .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
-        visibility: hidden;
-    }
+    
 }
 
 /*-----------------------------------------------------------------------about----------------------------------------------------------*/
