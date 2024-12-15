@@ -48,6 +48,12 @@
 }
 
 /*-----------------------------------------------------------------------body----------------------------------------------------------*/
+   
+    @media only screen and (max-width: 500px){
+        .headers{
+            font-size: large;
+        }
+    }
 
     @media only screen and (max-width: 410px){
         .home_container, .about_container , .services_container, .reviews_container{
@@ -181,6 +187,7 @@
     .headers_rev{
         font-size: large;
     }
+    
 }
 
 
