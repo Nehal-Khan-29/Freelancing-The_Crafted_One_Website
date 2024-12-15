@@ -511,11 +511,11 @@ body::before {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    font-size: large;
 }
 
 .review_person_name b, .review_person_name p{
     font-size: medium;
+    width: 150px;
 }
 
 .rp_circle{
@@ -531,6 +531,8 @@ body::before {
     width: 100%;
     height: 100%;
     font-size: large;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .rp_text p{
