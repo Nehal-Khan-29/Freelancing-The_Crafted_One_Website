@@ -283,11 +283,16 @@ body::before {
 }
 
 .problems{
+    display: flex;
+    justify-self: center;
+    background-image: linear-gradient(-135deg,white, #F2E3CA);
+    border: 10px double #B49E81;
+    font-size: x-large;
+    color: rgb(55, 56, 57);
+    text-align: left;
+    width: fit-content;
     font-weight: bold;
     margin-top: 100px;
-    text-align: left;
-    background-color: #a6d6fd;
-    width: fit-content;
     border-radius: 30px;
     padding: 30px;
 }
