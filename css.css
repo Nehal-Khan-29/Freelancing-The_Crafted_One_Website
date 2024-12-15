@@ -171,7 +171,8 @@ body::before {
 
 .home_container{
     display: flex;
-    justify-content:space-between;
+    justify-content:left;
+    gap: 200px;
 }
 
 .welcome_text1{
@@ -193,9 +194,6 @@ body::before {
 }
 
 /* ------------------------------------------------------------- 1 --- */
-.profile_content1{
-    rotate: 5deg;
-}
 
 .paper_clip_1{
     height: 30px;
@@ -251,15 +249,13 @@ body::before {
 
 .profile_content1 {
     transform: scale(0.9);
+    rotate: 5deg;
     z-index: 1;
 }
 /* ----------------------------------------------------------------------- 2 */
 
 .photos_chunk{
     display:flex;
-    flex-direction: row;
-    width: 700px;
-    justify-content: center;
 }
 .profile_photo_inside{
     background-color: black;

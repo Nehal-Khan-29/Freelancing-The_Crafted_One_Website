@@ -111,6 +111,7 @@
         align-items: center;
         display: flex;
         flex-direction: column-reverse;
+        gap: 0px;
     }
 
     .photos_chunk {
@@ -131,12 +132,11 @@
         align-items: center;
         display: flex;
         flex-direction: column-reverse;
+        gap: 0px;
     }
 
     .photos_chunk {
         transform: scale(1);
-        width: 1000px;
-        flex-direction: row;
     }
     .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
         visibility: hidden;
@@ -146,7 +146,7 @@
         visibility: visible;
     }
     .profile_photo1{
-        box-shadow: 5px 5px 5px red;
+        box-shadow: 5px 5px 5px gray;
     }
     
 }
