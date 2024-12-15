@@ -135,7 +135,7 @@
 
     .photos_chunk {
         transform: scale(1);
-        
+        visibility: hidden;
         width: 200px;
     }
     .profile_content1 {
