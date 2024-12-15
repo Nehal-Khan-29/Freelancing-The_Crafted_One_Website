@@ -171,13 +171,18 @@ body::before {
 
 .home_container{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+}
+
+.photos_chunk{
+    width: 700px;
+    justify-content: center;
 }
 
 .welcome_text1{
     margin-top: 50px;
     text-align: justify;
-    max-width: 850px;
+    max-width: 550px;
     color: rgb(55, 56, 57);
     font-weight: bold;
     font-size: xx-large;
@@ -186,14 +191,15 @@ body::before {
 .welcome_text2{
     margin-top: 25px;
     text-align: justify;
-    width: 650px;
+    width: 550px;
     color: rgb(55, 56, 57);
     font-weight: bold;
     font-size: x-large;
 }
 
-.profile_content{
-    rotate: 10deg;
+/* ------------------------------------------------------------- 1 --- */
+.profile_content1{
+    rotate: 5deg;
 }
 
 .paper_clip_1{
@@ -219,23 +225,23 @@ body::before {
     border-top: 0;
 }
 
-.profile_photo{
+.profile_photo1{
     background-color: white;
     height: 400px;
     width: 350px;
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 2px 5px black;
 }
 
-.profile_photo_inside{
+.profile_photo_inside1{
     background-color: black;
     height: 280px;
     width: 310px;
 }
 
-.profile_photo_inside img{
+.profile_photo_inside1 img{
     height: 280px;
     width: 310px;
 }
@@ -246,6 +252,69 @@ body::before {
     font-weight: bold;
     font-size: 30px;
     margin-top: 30px;
+}
+
+.profile_content1 {
+    transform: scale(0.9);
+}
+/* ----------------------------------------------------------------------- 2 */
+
+.photos_chunk{
+    display:flex;
+    flex-direction: row;
+}
+.profile_photo_inside{
+    background-color: black;
+    height: 360px;
+}
+.profile_photo_inside img{
+    height: 360px;
+    width: 310px;
+}
+.profile_photo{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+.profile_content2{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-200px) translateY(-150px) scale(0.6);
+    rotate: -10deg;
+}
+.profile_content3{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-200px) translateY(150px) scale(0.65);
+    rotate: 10deg;
+}
+.profile_content4{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(200px) translateY(-150px) scale(0.6);
+    rotate: 10deg;
+}
+.profile_content5{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(200px) translateY(150px) scale(0.7);
+    rotate: -10deg;
+}
+.profile_content6{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(10px) translateY(-150px) scale(0.7);
+    rotate: -2deg;
+}
+.profile_content7{
+    position: absolute;
+    z-index: -1;
+    transform: translateX(20px) translateY(200px) scale(0.7);
+    rotate: 3deg;
 }
 
 /*===================================================== About ===========================================================================*/
