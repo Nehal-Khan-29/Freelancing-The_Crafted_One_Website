@@ -133,4 +133,36 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
+//=========================================================== All transitions =========================================================
+
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.bottom <= 0 || 
+      rect.top >= window.innerHeight || 
+      rect.right <= 0 || 
+      rect.left >= window.innerWidth
+    );
+  }
+  
+  function handleScroll() {
+    const elements = document.querySelectorAll('');
+  
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('slide-in');
+        element.classList.remove('slide-in');
+        element.style.visibility = 'visible';
+      } else {
+        element.classList.remove('slide-in');
+        element.classList.add('slide-in');
+        
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll);
+
 /*=====================================================   ===========================================================================*/

@@ -92,6 +92,8 @@ body::before {
     width: fit-content;
     padding: 10px;
     border: 10px double #B49E81;
+    background-image: linear-gradient(360deg,white, #ffce80);
+    font-style: italic;
 }
 
 .swan1{
@@ -478,22 +480,6 @@ body::before {
 
 /*===================================================== reviews ===========================================================================*/
 
-.headers_rev{
-    position: absolute;
-    padding: 10px;
-    height: fit-content;
-    border: 10px double #F2E3CA;
-    margin-top: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    border-radius: 30px;
-    background-color: #B49E81;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-}
-
 .reviews_container_2 {
     display: grid;
     grid-auto-rows: minmax(200px, 200px);
@@ -705,4 +691,23 @@ input::placeholder, textarea::placeholder {
         visibility: hidden;
         transform: translateY(-10px);
     }
+}
+
+/*========================================================= All transition =============================================================*/
+
+@keyframes BodyslideInFromTop {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+}
+  
+.slide-in {
+    animation: BodyslideInFromTop 0.8s ease-in-out;
 }
