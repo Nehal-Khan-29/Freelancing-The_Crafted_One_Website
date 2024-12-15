@@ -499,9 +499,10 @@ body::before {
     gap: 10px;
 }
 
-.review_person_name b, .review_person_name p{
+.review_person_name b{
     font-size: medium;
     width: 150px;
+    justify-items: center;
 }
 
 .rp_circle{
