@@ -127,14 +127,6 @@
         text-align: left;
     }
 
-    .home_container{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 0px;
-    }
-
     .photos_chunk {
         transform: scale(1);
     }
