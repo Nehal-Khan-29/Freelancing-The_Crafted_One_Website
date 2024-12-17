@@ -180,9 +180,17 @@ function isInViewport(element) {
 
 const gallery = document.querySelectorAll('img');
 
-  // Add click event to each image
   gallery.forEach(img => {
     img.addEventListener('click', () => {
       window.open(img.src, '_blank');
     });
   });
+
+  const gallery2 = document.querySelectorAll('.profile_content2, .profile_content3, .profile_content4, .profile_content5, .profile_content6, .profile_content7');
+
+  gallery2.forEach(i => {
+    i.addEventListener('click', () => {
+      window.open(i.querySelector('img').src, '_blank');
+    });
+  });
+  

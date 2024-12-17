@@ -182,7 +182,7 @@ body::before {
 .welcome_text2{
     margin-top: 25px;
     text-align: left;
-    width: 550px;
+    width: 350px;
     color: rgb(55, 56, 57);
     font-size: large;
 }
