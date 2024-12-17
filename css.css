@@ -193,7 +193,7 @@ body::before {
     height: 30px;
     margin-left: 25px;
     width: 30px;
-    border: 5px solid black;
+    border: 5px solid rgb(132, 0, 0);
     border-radius: 30px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -205,7 +205,7 @@ body::before {
     width: 25px;
     margin-top: 20px;
     margin-right: 5px;
-    border: 5px solid black;
+    border: 5px solid rgb(129, 0, 0);
     border-radius: 30px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -338,18 +338,53 @@ body::before {
 /*===================================================== wbu ===========================================================================*/
 
 .problems{
+    padding: 10px;
     display: flex;
-    justify-self: center;
-    background-image: linear-gradient(-135deg,white, #F2E3CA);
-    border: 10px double #B49E81;
-    font-size: x-large;
-    color: rgb(55, 56, 57);
-    text-align: left;
-    width: fit-content;
-    font-weight: bold;
-    margin-top: 150px;
-    border-radius: 30px;
-    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.problems1{
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-template-columns: repeat(3, 0fr); 
+    gap: 40px; 
+}
+
+.problems2{
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: minmax(400px, 400px);
+    grid-template-columns: repeat(2, 0fr); 
+    gap: 40px; 
+}
+
+.prob_container{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #edcda6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px double #F2E3CA;
+}
+
+.prob_img{
+    height: 200px;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 100%;
+}
+
+.prob_text{
+    margin-top: 10px;
+    max-width: 300px;
+    padding: 10px;
 }
 
 /*===================================================== Services ===========================================================================*/
@@ -770,4 +805,17 @@ input::placeholder, textarea::placeholder {
   
 .slide-in {
     animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
+@keyframes bigzoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+    transform: scale(1);
+    }
+}
+  
+.slide-in2 {
+    animation: bigzoom 0.8s ease-in-out;
 }
