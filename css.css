@@ -228,14 +228,6 @@ body::before {
     width: 260px;
 }
 
-.welcome_text3{
-    text-align: center;
-    color: rgb(55, 56, 57);
-    font-weight: bold;
-    font-size: x-large;
-    margin-top: 20px;
-}
-
 .profile_content1 {
     rotate: 5deg;
 }
@@ -298,6 +290,27 @@ body::before {
     height: 250px;
     width: 250px;
 }
+
+.welcome_text3 img{
+    margin-top: 20px;
+    height: 35px;
+    width:fit-content;
+    animation: showtext 3s ease;
+}
+
+@keyframes showtext {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
 
 /*===================================================== About ===========================================================================*/
 

@@ -95,9 +95,10 @@
         width: 210px;
     }
 
-    .welcome_text3{
-        font-size: large;
-        margin-top: 25px;
+    .welcome_text3 img{
+        margin-top: 20px;
+        height: 30px;
+        width:fit-content;
     }
 
     .profile_content2 img, .profile_content4 img,.profile_content5 img,.profile_content7 img{
@@ -158,9 +159,10 @@
         width: 210px;
     }
 
-    .welcome_text3{
-        font-size: large;
-        margin-top: 25px;
+    .welcome_text3 img{
+        margin-top: 20px;
+        height: 30px;
+        width:fit-content;
     }
 
     .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
