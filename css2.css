@@ -56,7 +56,7 @@
     }
 
     @media only screen and (max-width: 410px){
-        .home_container, .about_container , .services_container, .reviews_container{
+        .home_container, .about_container , .services_container, .wbu_container, .reviews_container{
             max-width: 95%;
         }
     }
@@ -71,32 +71,47 @@
 
 @media only screen and (max-width: 1400px){
     .welcome_text1{
-        max-width: 300px;
+        max-width: 400px;
         font-size: x-large;
     }
-
     .welcome_text2{
-        max-width: 300px;
+        max-width: 400px;
         font-size: medium;
     }
-    .photos_chunk{
-        transform: scale(0.9);
-    }
-}
 
-@media only screen and (max-width: 1200px){
-    .welcome_text1{
-        max-width: 300px;
-        font-size: x-large;
+    .profile_photo1{
+        background-color: white;
+        height: 300px;
+        width: 250px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-shadow: 2px 2px 5px black;
+    }
+    
+    .profile_photo1 img{
+        background-color: black;
+        height: 200px;
+        width: 210px;
     }
 
-    .welcome_text2{
-        max-width: 300px;
-        font-size: medium;
+    .welcome_text3{
+        font-size: large;
+        margin-top: 25px;
     }
-    .photos_chunk{
-        transform: scale(0.8);
+
+    .profile_content2 img, .profile_content4 img,.profile_content5 img,.profile_content7 img{
+        border: 10px solid white;
+        height: 220px;
+        width: 220px;
     }
+    
+    .profile_content3 img, .profile_content6 img{
+        border: 10px solid white;
+        height: 220px;
+        width: 220px;
+    }
+    
 }
 
 @media only screen and (max-width: 1100px){
@@ -111,35 +126,57 @@
         align-items: center;
         display: flex;
         flex-direction: column-reverse;
-        gap: 0px;
     }
 
-    .photos_chunk {
-        transform: scale(0.7);
-    }
 }
 
-@media only screen and (max-width: 580px){
+
+@media only screen and (max-width: 700px){
+
+    .profile_content1{
+        margin-top: 50px;
+    }
+
+    .welcome_text1{
+        margin-top: 50px;
+
+    }
+
+    .profile_photo1{
+        background-color: white;
+        height: 300px;
+        width: 250px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-shadow: 2px 2px 5px black;
+    }
+    
+    .profile_photo1 img{
+        background-color: black;
+        height: 200px;
+        width: 210px;
+    }
+
+    .welcome_text3{
+        font-size: large;
+        margin-top: 25px;
+    }
+
+    .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+
     .welcome_text2{
         margin-top: 20px;
         max-width: 300px;
         font-size: large;
-        text-align: left;
     }
-
-    .photos_chunk {
-        transform: scale(1);
-    }
-    .profile_content2,.profile_content3,.profile_content4,.profile_content5,.profile_content6,.profile_content7{
-        visibility: hidden;
-    }
-    .profile_content1 {
-        transform: scale(0.7);
-        visibility: visible;
-    }
-    .profile_photo1{
-        box-shadow: 5px 5px 5px gray;
-    }
+    
     
 }
 
@@ -210,10 +247,16 @@
 
 /*-----------------------------------------------------------------------reviews----------------------------------------------------------*/
 
+@media only screen and (max-width: 1300px){
+    .rp_text{
+        font-size: small;
+    }
+}
+
 @media only screen and (max-width: 1100px){
     .reviews_container_2 {
         display: grid;
-        grid-auto-rows: minmax(200px, 200px);
+        grid-auto-rows: minmax(230px, 230px);
         grid-template-columns: repeat(1, 1fr); 
         gap: 20px; 
         padding: 10px;
@@ -221,7 +264,13 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
+    .rp_text{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 600px){
     .reviews_container_2 {
         display: grid;
         grid-auto-rows: auto;
@@ -233,9 +282,15 @@
     .rp_text{
         font-size: small;
     }
+
     .review_person{
         flex-direction: column;
+        justify-items: center;
         height: 350px;
+    }
+
+    .review_person_name{
+        width: auto;
     }
     
 }

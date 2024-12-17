@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'sw-icon-font';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     outline: none;
 }
@@ -53,7 +53,7 @@ body::before {
     z-index: -1;
 }
 
-.home_container, .about_container , .services_container, .reviews_container{
+.home_container, .about_container , .services_container, .wbu_container, .reviews_container{
     /*background-color: rgba(0, 0, 0, 0.1);*/
     padding: 50px;
     min-height: 100vh;
@@ -85,7 +85,7 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #B49E81;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     text-align: center;
     border-radius: 30px;
@@ -102,27 +102,17 @@ body::before {
     position: fixed;
     z-index: -1; 
 }
-.swan2{
-    top: 30px;
-    left: 30px;
-    position: fixed;
-    z-index: -1; 
-}
 .swan3{
     bottom: 0px;
     right: 0px;
     position: fixed;
-    z-index: -1; 
+    z-index: -10; 
 }
 .swan1 img{
     opacity: 0.3;
     height: 70px;
 }
-.swan2 img{
-    opacity: 0.3;
-    height: 100px;
-    rotate: 20deg;
-}
+
 .swan3 img{
     opacity: 0.3;
     height: 400px;
@@ -157,43 +147,47 @@ body::before {
     transition:0.3s ease;
     border-radius: 15px;
     font-weight: bolder;
-
 }
 
-#Srikanth_Name{
+#thecraftedone{
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     font-weight:bolder;
+    display: flex;
+    flex-direction: row;
+}
+
+#thecraftedone img, #thecraftedone p{
+    padding-left: 10px;
 }
 
 /*===================================================== Home ===========================================================================*/
 
 .home_container{
     display: flex;
-    justify-content:left;
-    gap: 200px;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
 }
 
 .welcome_text1{
-    margin-top: 50px;
-    text-align: justify;
+    text-align: left;
     max-width: 550px;
-    color: rgb(55, 56, 57);
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-.welcome_text2{
-    margin-top: 25px;
-    text-align: justify;
-    width: 550px;
     color: rgb(55, 56, 57);
     font-weight: bold;
     font-size: x-large;
 }
 
-/* ------------------------------------------------------------- 1 --- */
+.welcome_text2{
+    margin-top: 25px;
+    text-align: left;
+    width: 550px;
+    color: rgb(55, 56, 57);
+    font-size: large;
+}
+
+/* ---------------------------------------------------------------- */
 
 .paper_clip_1{
     height: 30px;
@@ -220,89 +214,89 @@ body::before {
 
 .profile_photo1{
     background-color: white;
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    box-shadow: 5px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
 }
 
-.profile_photo_inside1{
+.profile_photo1 img{
     background-color: black;
-    height: 280px;
-    width: 310px;
-}
-
-.profile_photo_inside1 img{
-    height: 280px;
-    width: 310px;
+    height: 250px;
+    width: 260px;
 }
 
 .welcome_text3{
     text-align: center;
     color: rgb(55, 56, 57);
     font-weight: bold;
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: x-large;
+    margin-top: 20px;
 }
 
 .profile_content1 {
-    transform: scale(0.9);
     rotate: 5deg;
-    z-index: 1;
 }
-/* ----------------------------------------------------------------------- 2 */
+/* ---------------------------------------------------------------*/
 
-.photos_chunk{
-    display:flex;
+
+.photos_chunk table{
+    border-collapse: collapse;
 }
-.profile_photo_inside{
-    background-color: black;
-    height: 360px;
+
+.profile_content2, .profile_content4,.profile_content5,.profile_content7{
+    position: relative;
+    z-index: -1;
 }
-.profile_photo_inside img{
-    height: 360px;
-    width: 310px;
+
+.profile_content3, .profile_content6{
+    position: relative;
+    z-index: -1;
 }
-.profile_photo{
-    background-color: white;
-    height: 400px;
-    width: 350px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    box-shadow: 5px 5px 5px gray;
+
+.profile_content2 img{
+    transform: translateX(125px) translateY(20px);
+    rotate: 8deg;
+    border: 10px solid white;
+    height: 250px;
+    width: 250px;
 }
-.profile_content2{
-    position: absolute;
-    transform: translateX(-200px) translateY(-150px) scale(0.6);
-    rotate: -10deg;
-}
-.profile_content3{
-    position: absolute;
-    transform: translateX(-200px) translateY(150px) scale(0.65);
-    rotate: 10deg;
-}
-.profile_content4{
-    position: absolute;
-    transform: translateX(200px) translateY(-150px) scale(0.6);
-    rotate: 10deg;
-}
-.profile_content5{
-    position: absolute;
-    transform: translateX(200px) translateY(150px) scale(0.7);
-    rotate: -10deg;
-}
-.profile_content6{
-    position: absolute;
-    transform: translateX(10px) translateY(-150px) scale(0.7);
-    rotate: -2deg;
-}
-.profile_content7{
-    position: absolute;
-    transform: translateX(20px) translateY(200px) scale(0.7);
+.profile_content3 img{
+    transform: translateX(20px) translateY(0px);
     rotate: 3deg;
+    border: 10px solid white;
+    height: 200px;
+    width: 200px;
+}
+.profile_content4 img{
+    transform: translateX(125px) translateY(-20px) ;
+    rotate: -8deg;
+    border: 10px solid white;
+    height: 250px;
+    width: 250px;
+}
+.profile_content5 img{
+    transform: translateX(-125px) translateY(20px);
+    rotate: -8deg;
+    border: 10px solid white;
+    height: 250px;
+    width: 250px;
+}
+.profile_content6 img{
+    transform: translateX(-20px) translateY(0px) ;
+    rotate: -3deg;
+    border: 10px solid white;
+    height: 200px;
+    width: 200px;
+}
+.profile_content7 img{
+    transform: translateX(-125px) translateY(-20px) ;
+    rotate: 8deg;
+    border: 10px solid white;
+    height: 250px;
+    width: 250px;
 }
 
 /*===================================================== About ===========================================================================*/
@@ -311,7 +305,7 @@ body::before {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .abt_me_1{
@@ -319,11 +313,11 @@ body::before {
     height: 500px;
     width: 500px;
     border-radius: 30px;
-    font-size: 20px;
-    background-color: #B49E81;
+    font-size: large;
+    background-color: #edcda6;
     border: 10px double #F2E3CA;
     padding: 20px;
-    text-align: justify;
+    text-align: left;
     overflow-y: auto;
 }
 
@@ -332,13 +326,19 @@ body::before {
     height: 500px;
     width: 500px;
     border-radius: 30px;
-    font-size: 18px;
-    background-image: linear-gradient(-135deg,white, #F2E3CA);
-    border: 10px double #B49E81;
+    font-size: medium;
+    background-color: #edcda6;
+    border: 10px double #F2E3CA;
     padding: 20px;
-    text-align: justify;
+    text-align: left;
     overflow-y: auto;
 
+}
+
+/*===================================================== wbu ===========================================================================*/
+
+.wbu_container{
+    margin-top: 100px;
 }
 
 .problems{
@@ -442,7 +442,7 @@ body::before {
   .carousel .card h2 {
     font-weight: 900;
     color: rgb(0, 66, 135);
-    font-size: 1.56rem;
+    font-size: larger;
     margin: 30px 0 5px;
   }
   .carousel .card span {
@@ -492,9 +492,9 @@ body::before {
   }
 
   .card .video-container .about_the_work{
-    text-align: justify;
+    text-align: left;
     overflow-y: auto;
-    font-size: large;
+    font-size: medium;
     max-height: 300px;
     max-width: 300px;
   }
@@ -539,7 +539,7 @@ body::before {
 
 .reviews_container_2 {
     display: grid;
-    grid-auto-rows: minmax(200px, 200px);
+    grid-auto-rows: minmax(230px, 230px);
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     padding: 10px;
@@ -547,7 +547,7 @@ body::before {
 }
 
 .review_person{
-    height: 200px;
+    height: 230px;
     background-color: #B49E81;
     border-radius: 30px;
     padding: 10px;
@@ -557,8 +557,13 @@ body::before {
 }
 
 .review_person_name b{
-    font-size: medium;
-    width: 150px;
+    font-size: 13px;
+    justify-items: center;
+}
+
+.review_person_name{
+    font-size: small;
+    width: 200px;
     justify-items: center;
 }
 
@@ -566,6 +571,7 @@ body::before {
     border: 5px solid white;
     border-radius: 100%;
     height: 100px;
+    width: 100px;
 }
 
 .rp_text{
@@ -574,7 +580,7 @@ body::before {
     border-radius: 25px;
     width: 100%;
     height: 100%;
-    font-size: large;
+    font-size: medium;
     overflow-y: auto;
     scrollbar-width: none;
 }
@@ -636,7 +642,7 @@ input,textarea{
     border: 0px;
     padding-left:20px ;
     height: 40px;
-    font-size: larger;
+    font-size: medium;
     font-weight: 900;
     width: 400px;
     background-color: rgb(255, 255, 255, 0.4);
@@ -669,7 +675,7 @@ input::placeholder, textarea::placeholder {
     width: 150px;
     height: 30px;
     border-radius: 10px;
-    font-size: larger;
+    font-size: large;
     font-weight: 900;
     border: none;
     color: white;
