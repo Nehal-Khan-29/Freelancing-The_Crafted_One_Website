@@ -147,7 +147,7 @@ function isInViewport(element) {
   }
   
   function handleScroll() {
-    const elements = document.querySelectorAll('.home_container, .abt_me_1, .abt_me_2, .problems, .card, .review_person, .contact-form input, .contact-form textarea, .contact-form button');
+    const elements = document.querySelectorAll('.home_container, .abt_me_1, .abt_me_2, .card, .review_person, .contact-form input, .contact-form textarea, .contact-form button');
     const elements2 = document.querySelectorAll('.prob_container');
 
     elements.forEach(element => {
@@ -165,7 +165,6 @@ function isInViewport(element) {
         if (isInViewport(element)) {
           element.classList.add('slide-in2');
           element.classList.remove('slide-in2');
-          element.style.visibility = 'visible';
         } else {
           element.classList.remove('slide-in2');
           element.classList.add('slide-in2');
