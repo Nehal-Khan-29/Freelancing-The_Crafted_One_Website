@@ -337,10 +337,6 @@ body::before {
 
 /*===================================================== wbu ===========================================================================*/
 
-.wbu_container{
-    margin-top: 100px;
-}
-
 .problems{
     display: flex;
     justify-self: center;
@@ -351,7 +347,7 @@ body::before {
     text-align: left;
     width: fit-content;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 150px;
     border-radius: 30px;
     padding: 30px;
 }
