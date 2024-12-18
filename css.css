@@ -754,7 +754,7 @@ input::placeholder, textarea::placeholder {
     font-size: x-large;
 }
 
-.logos .lin i:hover,.logos .ins i:hover{
+.logos i:hover{
     width:30px;
     transition: ease;
     color: black;
