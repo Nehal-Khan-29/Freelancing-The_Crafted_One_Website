@@ -295,7 +295,7 @@ body::before {
 
 /*===================================================== wbu ===========================================================================*/
 
-.problems{
+/* .problems{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -343,6 +343,30 @@ body::before {
     margin-top: 10px;
     max-width: 300px;
     padding: 10px;
+} */
+
+.problems{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 50px;
+}
+
+.prob_photo{
+    height: 400px;
+}
+
+.problems ul{
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    width: 400px;
+    color: rgb(55, 56, 57);
+    list-style-type: square;
+    line-height: 1.8;
 }
 
 /*===================================================== Services ===========================================================================*/
