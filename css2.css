@@ -193,6 +193,30 @@
 
 }
 
+@media only screen and (max-width: 800px){
+
+
+    .prob_photo_0 {
+        position: absolute; 
+        width: 90px;
+        border: 5px solid black;
+    }
+
+    .prob_photo_1{
+        height: 300px;
+    }
+
+    @keyframes drop {
+    0% {
+        transform: translate(40px, -50px) rotate(13deg);
+    }
+    100% {
+        transform: translate(40px, 15px) rotate(13deg);
+    }
+}
+
+}
+
 
 @media only screen and (max-width: 600px){
 
