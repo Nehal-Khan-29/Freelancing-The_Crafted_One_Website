@@ -37,7 +37,6 @@ html{
 body{
     height: auto;
     overflow-x: hidden;
-    /* background-color: #F2E3CA; */
     background-color: #FFF;
 }
 
@@ -146,7 +145,6 @@ body::before {
     color: black;
     transition:0.3s ease;
     border-radius: 15px;
-    font-weight: bolder;
 }
 
 #thecraftedone{
@@ -263,17 +261,17 @@ body::before {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .abt_me_1{
     align-content: center;
-    height: 500px;
+    height: 420px;
     width: 500px;
     border-radius: 30px;
-    font-size: large;
-    background-color: #edcda6;
-    border: 10px double #F2E3CA;
+    font-size: medium;
+    background-color: #75a2fd59;
+    border: 10px double #3f60a2;
     padding: 20px;
     text-align: left;
     overflow-y: auto;
@@ -281,69 +279,19 @@ body::before {
 
 .abt_me_2{
     align-content: center;
-    height: 500px;
+    height: 420px;
     width: 500px;
     border-radius: 30px;
     font-size: medium;
-    background-color: #edcda6;
-    border: 10px double #F2E3CA;
     padding: 20px;
     text-align: left;
     overflow-y: auto;
+    background-color: white;
+    box-shadow: grey 3px 3px 15px;
 
 }
 
 /*===================================================== wbu ===========================================================================*/
-
-/* .problems{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.problems1{
-    justify-content: center;
-    display: grid;
-    grid-auto-rows: minmax(400px, 400px);
-    grid-template-columns: repeat(3, 0fr); 
-    gap: 40px; 
-}
-
-.problems2{
-    margin-top: 20px;
-    justify-content: center;
-    display: grid;
-    grid-auto-rows: minmax(400px, 400px);
-    grid-template-columns: repeat(2, 0fr); 
-    gap: 40px; 
-}
-
-.prob_container{
-    height: 400px;
-    width: 400px;
-    border-radius: 100%;
-    background-color: #edcda6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 10px double #F2E3CA;
-}
-
-.prob_img{
-    height: 200px;
-    width: 200px;
-    border: 10px solid white;
-    border-radius: 100%;
-}
-
-.prob_text{
-    margin-top: 10px;
-    max-width: 300px;
-    padding: 10px;
-} */
 
 .problems{
     padding: 10px;
