@@ -355,19 +355,45 @@ body::before {
     gap: 50px;
 }
 
-.prob_photo{
+.problem_flask{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prob_photo_0 {
+    position: absolute; 
+    width: 120px;
+    border: 5px solid black;
+}
+
+.slide-in3 {
+    animation: drop 1s forwards; 
+}
+
+@keyframes drop {
+    0% {
+        transform: translate(50px, -50px) rotate(13deg);
+    }
+    100% {
+        transform: translate(50px, 15px) rotate(13deg);
+    }
+}
+
+.prob_photo_1{
     height: 400px;
 }
 
 .problems ul{
     text-align: left;
     font-size: large;
-    font-weight: bold;
     width: 400px;
     color: rgb(55, 56, 57);
     list-style-type: square;
     line-height: 1.8;
 }
+
 
 /*===================================================== Services ===========================================================================*/
 
